@@ -1,0 +1,14 @@
+---
+title: "dplyr Resources"
+output: html_document
+---
+
+Additional resources for learning about dplyr and tidyr:
+
+1. The dplyr vignettes and the tidyr vignette.
+2. Hadley's [tidy data paper](http://vita.had.co.nz/papers/tidy-data.pdf)
+3. Hadley's [useR!14 dplyr tutorial materials](https://www.dropbox.com/sh/i8qnluwmuieicxc/AAAgt9tIKoIm7WZKIyK25lh6a)
+4. A set of dplyr-related [links/tutorials](http://www.dataschool.io/dplyr-tutorial-for-faster-data-manipulation-in-r/)
+5. dplyr tag at StackOverflow.
+6. The [manipulatr mailing list](https://groups.google.com/forum/#!forum/manipulatr)
+7. Examples on individual help pages (highly recommended).
