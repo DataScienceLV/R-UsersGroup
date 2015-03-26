@@ -1,0 +1,175 @@
+---
+title: "Introduction to RStudio"
+author: "Daniel Emaasit and Dennis Murphy"
+
+output: html_document
+---
+
+## Overview
+
+RStudio is an IDE for R. Some of its features include:
+
+* the ability to create R script files;
+* the ability to create documents that include R code and output;
+* the ability to manage multiple data analysis projects;
+* the ability to perform (package) development work in R.
+
+In other words, RStudio is designed to ease workflow for both
+beginners and experienced R users.
+
+
+## Installation process
+
+* Step 1: Install R for your OS from CRAN.
+* Step 2: Install RStudio.
+
+This will be an interactive workshop in setting up RStudio and
+getting familiar with its basic features, so the first exercise
+is to install R and/or RStudio if you have not already done so.
+
+* R: http://cran.r-project.org/
+* RStudio: http://www.rstudio.com/products/RStudio/
+* RStudio preview: http://www.rstudio.com/products/rstudio/download/preview/
+
+
+## Setup
+
+By default, R will place an icon on the desktop on Windows and 
+on the dock of a Mac, but RStudio will not. You need to create
+a shortcut/icon for RStudio and place it on the desktop or dock.
+Once you have it positioned, double click on it to start the 
+application.
+
+
+## Customization of the user interface
+
+Go to `Tools -> Global options` to configure your Rstudio interface.
+
+We will walk through each of the nine categories and give you
+the opportunity to customize your interface.
+
+You should also install the `knitr` package from CRAN, as its
+capabilities are much more extensive than the default `Sweave`.
+To install the package, type this in the console:
+
+```
+install.packages("knitr")
+```
+
+
+## Overview of the RStudio panes
+
+By default, RStudio has four panes that are used for different 
+purposes. In the standard setup, we have
+
+ * a source pane 
+ * a console pane
+ * a current environment/history pane
+ * a display pane
+ 
+ 
+### Source pane
+
+Basically, anything you need to type is done in the source pane.
+The types of files you can create include:
+
+ * R code script files
+ * R Markdown files (documents)
+ * text files
+ * R presentation files
+ * R workbooks
+
+
+#### R Markdown documents
+
+One of the most useful features of RStudio is its ability to
+create reports with R code using the simple R Markdown language.
+
+Another useful feature is that one can convert Markdown to several
+other document formats such as HTML, Word and PDF. It does this
+by using the document conversion software `pandoc`, which is
+bundled with RStudio so that you don't have to install it separately.
+
+In R Markdown, code chunks are initiated with three backticks,
+followed by braces. Inside the braces, the first entry is `r`
+followed by a space, then a(n optional) title. One can also add
+_chunk options_ which are separated by commas. The code chunk
+ends with three backticks. When the document is run, the code is
+executed and the output appears in the document.
+
+Everything you need to know about R Markdown (and more) is found at
+http://rmarkdown.rstudio.com/
+
+
+### Console pane
+
+The console pane contains the R console. The typical 
+workflow is to highlight a code chunk in a script or Markdown file
+and click the `Run` icon at the top right of the source pane.
+However, you can also type commands directly into the console.
+
+
+### Current environment/history pane
+
+The two panes that default on the right hand side of the IDE
+contain two or more tabs, each of which pertains to a different
+element of the R programming environment. 
+
+The `Environment` tab shows
+the objects that are in your global environment.
+Each object's name is listed along with a summary of its contents,
+much like what would be returned from `str()`.
+
+The `History` tab records all of the commands entered into the R
+console. You can edit the command history, copy one or more lines
+from it and send it to either the console or to a script file.
+You can also (partially) clear the history using one of the icons
+associated with its tab.
+
+Note that each tab has an associated set of icons. Review these
+so that you understand what each one can do.
+
+
+### Display pane
+
+This pane is typically used for display:
+
+ * the `Files` tab lists all of the files in your current directory;
+ * the `Plots` tab retains the history of the plots created in the
+     current R session;
+ * the `Packages` tab lists all of your installed packages---those
+    with a check mark are currently loaded in the session;
+ * the `Help` tab displays each help page that you have requested;
+ * the `Viewer` tab will display anything not covered by the 
+   previous tabs.
+   
+As with the Environment pane, each tab has its own set of associated
+icons, so you should look these over and familiarize yourself with
+each one.
+
+
+## R projects
+
+RStudio makes it convenient to compartmentalize and organize
+projects (e.g.,
+homework assignments, data analysis projects) by allowing you
+to create separate R projects from within RStudio. 
+
+You can create an R project
+
+* in a new directory (which you have to name), 
+* from an existing directory (which you can locate by browsing), or 
+* by checking out a GitHub or SVN repository. 
+
+The far upper right corner of the IDE tells you which R project is
+current (which may be "none"). If you have existing R projects,
+clicking the down arrow will pop up a menu of recent projects
+from which you can choose.
+
+Within an R project, you can edit past code or documents, or
+create new ones. 
+
+
+## Git/SVN
+
+For development work, RStudio works well with Git and SVN.
