@@ -173,3 +173,6 @@ create new ones.
 ## Git/SVN
 
 For development work, RStudio works well with Git and SVN.
+
+* Webinar by Hadley Wickham: <https://github.com/rstudio/webinars/blob/master/2015-02/git-github.pdf>  
+* Git and GitHub from Hadley's book: <http://r-pkgs.had.co.nz/git.html>
